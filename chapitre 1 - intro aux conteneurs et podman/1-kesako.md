@@ -23,3 +23,5 @@ Imaginez une maison (VM) par rapport à un appartement (conteneur) dans un grand
 * Podman est comme un concierge pour votre immeuble d'appartements (conteneurs). Il s'occupe de la création, de la gestion et de la suppression des conteneurs.  
 * Pas besoin de daemon en arrière-plan, fonctionne en tant qu'utilisateur régulier (rootless).  
 * Compatible avec les commandes Docker et Docker Compose.  
+
+![podman](../images/podman-logo.png "Podman")
