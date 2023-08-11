@@ -35,8 +35,45 @@ In this guided exercise, we will walk you through the steps to install and confi
 Ensure you're connected to your cloud instance via SSH. If you're not sure how, refer to the earlier instructions provided.
 You should have sudo privileges to execute administrative commands.
 
-*Steps:*
+*Steps:*  
 
-    Connect to your cloud instance:
+1. Connect to your cloud instance  
+Using the port number, login, and password provided to you:  
+`ssh [YOUR_USERNAME]@[CLOUD_INSTANCE_ADDRESS] -p [YOUR_PORT_NUMBER]`  
 
-    Using the port number, login, and password provided to you:
+2. Update your package repositories:  
+Always begin by updating your package repositories to ensure you have access to the latest software.  
+`sudo dnf -y update`   
+
+3. Install Podman:  
+CentOS repositories come with Podman by default. Install it using:   
+`sudo dnf -y install podman` 
+
+4. Verify Podman Installation:  
+Check the installed version to ensure Podman was installed correctly:  
+   ```bash
+      podman --version
+      podman version
+      podman info
+   ``` 
+
+5. Test Podman with a simple container:  
+   Let's run a straightforward hello-world container:  
+   `podman run hello-world` 
+
+   This command will download the hello-world image (if it's not already present) and run it. If everything works, you'll see a message from the hello-world container.
+
+6. Cleanup:  
+   It's good practice to remove containers and images that aren't needed:
+
+   ```bash
+    podman rm -a
+    podman rmi hello-world
+   ```   
+
+Conclusion:
+
+Well done! You've successfully set up and tested Podman on your CentOS cloud instance. As we move through the course, we'll delve into Podman's more intricate and powerful features.
+
+Remember to follow each step carefully and note down any issues or queries. We will address any concerns in a subsequent Q&A session.
+
