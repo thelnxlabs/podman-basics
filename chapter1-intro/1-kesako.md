@@ -97,5 +97,28 @@ In essence, containers ensure that the delicious "cookie" experience you create 
 ![](../images/carnival2.png)   
 
    
+### Virtual Machines (VMs):
+
+--> Complete OS: VMs run a full operating system (including kernel) on top of the host OS. This OS is known as the guest OS.  
+
+--> Resources: VMs have fixed resources. When you create a VM, you allocate specific amounts of RAM, storage, and CPU cores.  
+
+--> Isolation: Each VM is completely isolated. This means the failure or a security breach in one VM doesn't affect others.  
+
+--> Size: VM images are often large because they include a full OS and its binaries.  
+
+--> Booting Time: VMs often have longer boot times since they need to start an entire operating system.  
+
+### Containers:
+
+--> Shared OS: Containers all share the same OS kernel and isolate the application processes from each other.
+
+--> Resources: Containers are more flexible with resources. They can use as much or as little as available and needed.
+
+--> Isolation: Containers are isolated, but they share the same kernel. The isolation is at the process level.
+
+--> Size: Container images are usually smaller since they only need to include the application and its dependencies.
+
+--> Booting Time: Containers start almost instantly since there's no OS to boot.  
 
 ![podman](../images/podman-logo.png "Podman")
