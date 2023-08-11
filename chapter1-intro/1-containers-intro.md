@@ -1,4 +1,4 @@
-# 1. Introduction to Containers and Podman:  
+# 1. Introduction to Containers:  
 ## 1.1 Software before Containers: Like Sharing Recipes
 
 **It is all about Apps (more precisely Apps distribution) !**  
@@ -120,5 +120,3 @@ In essence, containers ensure that the delicious "cookie" experience you create 
 --> Size: Container images are usually smaller since they only need to include the application and its dependencies.
 
 --> Booting Time: Containers start almost instantly since there's no OS to boot.  
-
-![podman](../images/podman-logo.png "Podman")
