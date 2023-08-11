@@ -39,50 +39,62 @@ In essence, containers ensure that the delicious "cookie" experience you create 
 
 ## 1.3 10+ Benefits of Containers  
 
-1. Consistency:  
+1. **Consistency:**  
    Containers ensure software runs the same across different environments (e.g., development, testing, production).  
 
-2. Isolation:  
+2. **Isolation:**  
    Each container operates independently, so changes or failures in one don't affect others.
 
-3. Efficiency:  
+3. **Efficiency:**  
    Containers share the same OS kernel, making them lightweight compared to traditional virtual machines.
 
-4. Portability:  
+4. **Portability:**  
    Software packed in a container can be easily moved across cloud providers, on-premises data centers, and developers' local machines.  
 
-5. Microservices Ready:  
+5. **Microservices Ready:**  
    Containers are a natural fit for microservice architectures, enabling each service to run in its own environment.  
 
-6. Resource Efficiency:  
+6. **Resource Efficiency:**  
    With containers, you can run many apps on a single machine, maximizing resource utilization.  
 
-7. Faster Deployments:  
+7. **Faster Deployments:**  
    As containers package all dependencies, it reduces the chances of issues during deployment, leading to quicker releases.  
 
-8. Scalability:  
+8. **Scalability:**  
    Easily scale up or down based on demand by spinning up more or fewer containers.  
 
-9. Version Control & Rollback:
+9. **Version Control & Rollback:**
    Containers can be versioned, and rolling back to a previous version is straightforward.  
 
-10. Easier Debugging & Diagnosis:  
+10. **Easier Debugging & Diagnosis:**  
     Replicate exact production environment locally to diagnose issues.
 
-11. Immutability:  
+11. **Immutability:**  
     Containers support the principle of immutability, meaning once they're set, they don't change. New changes necessitate deploying a new container, ensuring consistency.  
 
-12. Security:  
+12. **Security:**  
     Containers can offer strong isolation boundaries between applications, enhancing security.  
 
-13. Developer Productivity:  
+13. **Developer Productivity:**  
     Developers can work in a local environment that matches production, reducing the "it works on my machine" issues.  
 
-14. Legacy Application Support:  
+14. **Legacy Application Support:**  
     Containerization can breathe new life into old applications by allowing them to run in modern environments without full refactoring.  
    
    
-   
+## 1.4. Containers vs. Virtual Machines
+
+![](../images/containers-vs-virtual-machines.jpg)  
+
+>Imagine you're going to a carnival or a trade fair (the computer).  
+
+>VMs are like setting up complete stalls or shops. Each shop has its structure, electricity connection, staff, and products. Setting up each shop takes time, and each shop functions independently.
+
+![](../images/carnival1.png)
+
+>Containers are like booths or tents. They share the carnival's electricity and infrastructure, and they set up faster. Each booth has its products but depends on the carnival's main resources.
+
+![](../images/carnival2.png)   
 
    
 
