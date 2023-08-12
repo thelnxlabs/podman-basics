@@ -38,8 +38,7 @@ You should have sudo privileges to execute administrative commands.
 *Steps:*  
 
 1. Connect to your cloud instance  
-Using the port number, login, and password provided to you:  
-`ssh [YOUR_USERNAME]@[CLOUD_INSTANCE_ADDRESS] -p [YOUR_PORT_NUMBER]`  
+Using the URL, login, and ssh key provided to you.    
 
 2. Update your package repositories:  
 Always begin by updating your package repositories to ensure you have access to the latest software.  
