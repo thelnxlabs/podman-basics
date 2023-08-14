@@ -91,6 +91,20 @@ To stop a running container:
 
 ## 2.4. Networking with Containers  
 
+Port Forwarding with Containers
+
+Definition:
+
+Port forwarding with containers means redirecting a communication request from one address and port number combination to another while the packets are traversing a network gateway, such as a router or firewall. In the context of containers, it allows us to access services running inside a container from our host or even from outside our host.
+
+Why is it Important?
+
+Containers are isolated by default, which means if a service is running inside a container on a specific port, it's not directly accessible from outside the container. Port forwarding allows us to bridge this gap, making containerized applications accessible.
+
+How it Works with Podman:
+
+When you run a container using Podman and specify a port to be forwarded, Podman sets up a network route that forwards traffic from a specified port on your host to a specified port on your container.
+
 ### Exposing Ports  
 
 Let's run a basic HTTP server and expose its port:  
